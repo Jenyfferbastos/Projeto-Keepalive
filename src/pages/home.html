@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <script src="../scripts/svg-inject-min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style-home.css">
+  <title>Compass - Home</title>
+</head>
+
+<body onload="configurarHoraEDataHeader()">
+  <header class="cabecalho-home">
+    <img src="../assets/img/logo-compasso-preto-home.svg" alt="Logo Compasso">
+    <div class="style-horario">
+      <div id="horarioHeader">
+      </div>
+      <div id="dataHeader">
+      </div>
+      </div>
+    <div class="clima-localizacao">
+      <div class="clima">20°C</div>
+      <div class="localizacao">Salvador, BA</div>
+    </div>
+  </header>
+  <main class="container-texto">
+    <p class="texto-ingles-menor">Our mission is</p>
+    <p class="texto-traduzido">Nossa missão é</p>
+    <p class="texto-ingles">to transform the world</p>
+    <p class="texto-traduzido">transformar o mundo</p>
+    <p class="texto-ingles">building digital experiences</p>
+    <p class="texto-traduzido">construindo experiências digitais</p>
+    <p class="texto-ingles">that enable our client’s growth</p>
+    <p class="texto-traduzido">que permitam o crescimento dos nossos clientes</p>
+  </main>
+  <footer class="footer">
+    <p class="texto-aviso-autenticacao">Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</p>
+    <img class="linha-footer" src="../assets/img/line-footer-home.svg">
+    <p class="texto-refresh">Application refresh in</p>
+    <div class="segundos">
+    <h3 id="timerSegundos"></h3>
+    <p class="texto-segundos">seconds</p>
+    </div>
+    <div class="botoes-footer">
+    <a href="https://noticias.uol.com.br/"><button class="botao-continuar-navegando">Continuar Navegando</button></a>
+   <button class="botao-logout"> <a href="../pages/login.html">Logout</a></button>
+  </footer>
+  <script src="../scripts/index.js"></script>
+</body>
+
+</html>

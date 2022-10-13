@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  background-image: url("../assets/img/logo-compasso-background-home.svg");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position-y: 160px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cabecalho-home {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin: 20px;
+}
+.style-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 70px;
+}
+#horarioHeader {
+  font-size: 100px;
+  font-weight: 700;
+}
+#dataHeader{
+  font-size: 13px;
+}
+.container-texto {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 120px;
+  margin-top: 170px;
+}
+.texto-ingles-menor {
+  font-size: 30px;
+  color: rgba(193, 45, 24, 1);
+}
+.texto-ingles {
+  color: rgba(193, 45, 24, 1);
+  font-size: 50px;
+}
+.texto-traduzido {
+  color: rgba(34, 34, 34, 1);
+  font-size: 24px;
+}
+.footer {
+  background: linear-gradient(
+    to right,
+    rgba(51, 56, 61, 1),
+    rgba(28, 29, 32, 1)
+  );
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  height: 88px;
+  margin-top: 141px;
+}
+.texto-aviso-autenticacao {
+  width: 600px;
+  font-size: 11px;
+  margin-left: 180px;
+  margin-top: 33px;
+  margin-right: 10px;
+  text-align: right;
+}
+.linha-footer {
+  height: 60%;
+  margin-top: 10px;
+}
+.texto-refresh {
+  font-size: 12px;
+  width: 5%;
+  margin: 33px 10px 33px 90px;
+}
+.segundos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+#timerSegundos {
+  font-size: 40px;
+  font-weight: 700;
+}
+.texto-segundos {
+  font-size: 12px;
+}
+.botao-continuar-navegando {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(193, 50, 22, 1);
+  width: 130px;
+  text-align: center;
+  height: 100%;
+  border: none;
+}
+.botao-logout {
+  background-color: rgba(28, 29, 32, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 100px;
+  text-align: center;
+  border: none;
+}
+.botoes-footer {
+  display: flex;
+  margin-left: 300px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+button:hover{
+  font-size: 14px;
+  transition: 0.25s ease-in-out;
+}

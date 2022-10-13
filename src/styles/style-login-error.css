@@ -1,0 +1,13 @@
+.texto-erro-login{
+  color: rgba(233, 180, 37, 1);
+  align-self: center;
+  font-size: 14px;
+}
+.botao-continuar{
+  width: 100%;
+  margin-top: 50px;
+  margin-top: 30px;
+}
+.login-invalid{
+ border: solid 1px rgba(233, 180, 37, 1);
+}

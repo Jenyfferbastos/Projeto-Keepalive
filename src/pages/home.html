@@ -14,7 +14,7 @@
   <title>Compass - Home</title>
 </head>
 
-<body onload="configurarHoraEDataHeader()">
+<body onload="carregamento()">
   <header class="cabecalho-home">
     <img src="../assets/img/logo-compasso-preto-home.svg" alt="Logo Compasso">
     <div class="style-horario">
@@ -24,8 +24,11 @@
       </div>
       </div>
     <div class="clima-localizacao">
-      <div class="clima">20°C</div>
-      <div class="localizacao">Salvador, BA</div>
+      <div class="localizacao"></div>
+      <div class="container-clima">
+      <img class="icone-clima"><img>
+      <div class="clima"></div>
+      </div>
     </div>
   </header>
   <main class="container-texto">
@@ -48,9 +51,11 @@
     </div>
     <div class="botoes-footer">
     <a href="https://noticias.uol.com.br/"><button class="botao-continuar-navegando">Continuar Navegando</button></a>
-   <button class="botao-logout"> <a href="../pages/login.html">Logout</a></button>
+   <button class="botao-logout" onclick="fazerLogout()">Logout</button>
   </footer>
   <script src="../scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

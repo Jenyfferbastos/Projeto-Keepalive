@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style-login-padrao.css">
-  <link rel="stylesheet" href="../styles/style-login.css">
   <title>Compass - Login</title>
 </head>
 
@@ -25,19 +24,22 @@
         <h1 class="titulo-principal">Olá,</h1>
         <p class="texto-login">Para continuar navegando de forma segura, efetue o login na rede.</p>
         <h2 class="titulo-login">Login</h2>
-        <form class="formulario-login">
+        <form id="formularioLogin">
           <div class="email">
-            <input class="input" type="email" placeholder="Usuário"><img class="icone-email" src="../assets/img/icon-email-login.svg" alt="Icone email">
+            <input class="input" id="email" type="text" placeholder="Usuário" onclick="mudaEstilizacaoInput()"><img class="icone-email" src="../assets/img/icon-email-login.svg" alt="Icone email">
           </div>
           <div class="senha">
-            <input class="input" type="password" placeholder="Senha"><img class="icone-senha" src="../assets/img/icon-senha-login.svg" alt="Icone senha">
+            <input class="input" id="senha" type="password" placeholder="Senha" onclick="mudaEstilizacaoInput()"><img class="icone-senha" src="../assets/img/icon-senha-login.svg" alt="Icone senha">
           </div>
-          <button class="botao-continuar">Continuar</button>
+          <p id="textoErro"></p>
+          <p id="textoErroDois"></p>
+          <button type="submit" class="botao-continuar">Continuar</button>
         </form>
       </div>
     </main>
   </div>
   <script src="../scripts/index.js"></script>
+
 </body>
 
 </html>

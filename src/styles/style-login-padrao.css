@@ -44,7 +44,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.formulario-login {
+#formularioLogin {
   display: flex;
   flex-direction: column;
 }
@@ -71,17 +71,53 @@ input:hover {
 input:hover::placeholder {
   color: rgb(228, 220, 220);
 }
-input:focus{
+input:focus {
   border: solid 1px rgb(134, 119, 119);
 }
 input:focus::placeholder {
   color: rgb(121, 107, 107);
 }
 
+.label-form{
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 12px;
+}
+.email,
+.senha {
+  justify-content: space-between;
+}
+.icone-email,
+.icone-senha {
+  width: 20px;
+}
+.botao-continuar{
+  width: 90%;
+  margin-top: 50px;;
+}
 .email,
 .senha {
   display: flex;
   margin-bottom: 1.875rem;
+}
+
+.email-click, .senha-click{
+  position: relative;
+}
+.input-click{
+  padding: 10px 50px 10px 10px;
+}
+
+
+#textoErro, #textoErroDois{
+  color: rgba(233, 180, 37, 1);
+  align-self: center;
+  font-size: 14px;
+}
+.botao-continuar {
+  width: 100%;
+  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .botao-continuar {
@@ -96,8 +132,8 @@ input:focus::placeholder {
   border-radius: 50px;
   font-size: 16px;
 }
-.botao-continuar:hover{
+.botao-continuar:hover {
   font-size: 17px;
-  background:rgb(161, 52, 27);
-
+  background: rgb(161, 52, 27);
 }
+

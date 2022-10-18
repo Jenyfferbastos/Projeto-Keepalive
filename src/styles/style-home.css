@@ -26,6 +26,17 @@ body {
 #dataHeader{
   font-size: 13px;
 }
+.container-clima{
+  display: flex;
+  align-items: center;
+}
+.icone-clima{
+  width: 30%;
+}
+.clima{
+  font-weight: 700;
+  font-size: 48px;
+}
 .container-texto {
   height: 40%;
   display: flex;

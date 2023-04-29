@@ -85,7 +85,7 @@ function fazerLogout() {
     .then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem("usuarioLogado");
-        window.location.href = "http://127.0.0.1:5500/src/pages/login.html";
+        window.location.href = "http://127.0.0.1:5500/src/pages/index.html";
       } else if (result.isDenied) {
         //configuracao da lib
         swal
@@ -242,7 +242,7 @@ function temporizador(milesegundosPadrao) {
             setTimeout(
               () =>
                 (window.location.href =
-                  "http://127.0.0.1:5500/src/pages/login.html"),
+                  "http://127.0.0.1:5500/src/pages/index.html"),
               5000
             );
           }

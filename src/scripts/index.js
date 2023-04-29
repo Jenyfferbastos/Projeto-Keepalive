@@ -44,7 +44,7 @@ async function receberClima() {
   const { lat, long } = await buscarLocal();
   try {
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/current.json?key=2c10e15207974659a8214055221410&q=${lat},${long}&aqi=no&lang=pt`
+      `http://api.weatherapi.com/v1/current.json?key=bf8a14cb91364324b2c125012232904&q=${lat},${long}&aqi=no&lang=pt`
     );
     console.log(response.data);
     const temperatura = response.data.current.feelslike_c;
@@ -85,7 +85,7 @@ function fazerLogout() {
     .then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem("usuarioLogado");
-        window.location.href = "http://127.0.0.1:5500/src/pages/index.html";
+        window.location.href = "http://127.0.0.1:5500/index.html";
       } else if (result.isDenied) {
         //configuracao da lib
         swal
@@ -160,7 +160,7 @@ function mudaEstilizacaoInput() {
 
   const imgEmail = document.createElement("img");
   imgEmail.className = "icone-email";
-  imgEmail.src = "../assets/img/icon-email-login.svg";
+  imgEmail.src = "http://127.0.0.1:5500/src/assets/img/icon-email-login.svg";
 
   const inputEmail = document.createElement("input");
   inputEmail.className = "input input-click";
@@ -177,7 +177,7 @@ function mudaEstilizacaoInput() {
 
   const imgSenha = document.createElement("img");
   imgSenha.className = "icone-senha";
-  imgSenha.src = "../assets/img/icon-senha-login.svg";
+  imgSenha.src = "http://127.0.0.1:5500/src/assets/img/icon-senha-login.svg";
 
   const inputSenha = document.createElement("input");
   inputSenha.className = "input input-click";
@@ -242,7 +242,7 @@ function temporizador(milesegundosPadrao) {
             setTimeout(
               () =>
                 (window.location.href =
-                  "http://127.0.0.1:5500/src/pages/index.html"),
+                  "http://127.0.0.1:5500/index.html"),
               5000
             );
           }
